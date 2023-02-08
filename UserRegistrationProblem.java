@@ -11,6 +11,7 @@ public class UserRegistrationProblem {
 		System.out.println("--Welcom to user resistration problem--");
 		checkFirstName();
 		checkLastName();
+		checkEmail();
 	}
 		public static void checkFirstName() {
 			System.out.println("Enter first name: ");
@@ -22,6 +23,11 @@ public class UserRegistrationProblem {
 			String lName = sc.next();
 			userRegistration(lName);
 			}
+		public static void checkEmail() {
+			System.out.println("Enter an email: ");
+			String email = sc.next();
+			isValidEmail(email);
+			}
 		
 		public static void userRegistration(String firstName) {
 			String regex = "^[A-Z]{1}[a-z]{2,}$";
@@ -31,6 +37,14 @@ public class UserRegistrationProblem {
 				System.out.println("valid");
 			else
 				System.out.println("Invalid");
-			
+		}
+		public static void isValidEmail(String email) {
+			String regex = "^[A-Za-z0-9.]+[@][a-zA-z]{3,}[.][a-zA-z]{2,5}$";
+			Pattern p = Pattern.compile(regex);
+			Matcher m = p.matcher(email);
+			if(m.matches())
+				System.out.println("valid");
+			else
+				System.out.println("Invalid");
 		}
 }
