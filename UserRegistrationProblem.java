@@ -41,10 +41,20 @@ public class UserRegistrationProblem {
 			else
 				System.out.println("Invalid");
 		}
-		public static void isValidPassword1(String password) {
+		public static void isValidPassword1(String password1) {
 			String regex = "^[A-Z]{1}[a-z0-9]{7,}$";
 			Pattern p = Pattern.compile(regex);
-			Matcher m = p.matcher(password);
+			Matcher m = p.matcher(password1);
+			if(m.matches())
+				System.out.println("valid");
+			else
+				System.out.println("Invalid");
+		}
+		// should have at least 1 numeric number in password
+		public static void isValidPassword2(String password2) {
+			String regex = "^[A-Z][a-z0-9]{8,}$";
+			Pattern p = Pattern.compile(regex);
+			Matcher m = p.matcher(password2);
 			if(m.matches())
 				System.out.println("valid");
 			else
