@@ -34,7 +34,11 @@ public class Main {
 			System.out.println("Enter an password: ");
 			String password = sc.next();
 			UserRegistrationProblem.isValidPassword(password);
+		
+		case 6:
+			System.out.println("Enter an password1: ");
+			String password1 = sc.next();
+			UserRegistrationProblem.isValidPassword(password1);
 		}
 	}
-
 }

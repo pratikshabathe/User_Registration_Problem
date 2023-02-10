@@ -41,4 +41,13 @@ public class UserRegistrationProblem {
 			else
 				System.out.println("Invalid");
 		}
+		public static void isValidPassword1(String password) {
+			String regex = "^[A-Z]{1}[a-z0-9]{7,}$";
+			Pattern p = Pattern.compile(regex);
+			Matcher m = p.matcher(password);
+			if(m.matches())
+				System.out.println("valid");
+			else
+				System.out.println("Invalid");
+		}
 }
