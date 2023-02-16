@@ -24,8 +24,6 @@ public class Main {
 		UserRegistrationProblem.isValidPassword();
 		case 8:
 			UserRegistrationProblem.oneSpecialCharector();
-		case 9:
-			UserRegistrationProblem.oneSpecialCharector();
 		}	
 	}
 }
