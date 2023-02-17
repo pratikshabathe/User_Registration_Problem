@@ -95,4 +95,15 @@ public class UserRegistrationProblem {
 		else
 			System.out.println("Invalid");
 	}
+	public static void allEmailSample() {
+		System.out.println("Enter the special eail id: ");
+		String email = sc.next();
+		String regex = "^[A-Za-z]{3,}[.+-]?[A-Za-z0-9]*[@]{1}[a-z0-9]{1,}[.]{1}[a-z]{2,}[.]?[a-z]*$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(email);
+		if(m.matches())
+			System.out.println("valid");
+		else
+			System.out.println("Invalid");
+	}
 }

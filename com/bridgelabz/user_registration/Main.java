@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--Welcom to user resistration problem--");
-		System.out.println("Enter a number: \n1. valid first name. \n2. valid last name. \n3. valid email ID. \n4. valid mobile number. \n5. valid passeord. \6.valid password1.\n7. valid password2. \n8 valid password3");
+		System.out.println("Enter a number: \n1. valid first name. \n2. valid last name. \n3. valid email ID. \n4. valid mobile number. \n5. valid passeord. \6.valid password1.\n7. valid password2. \n8 valid password3. \n9. special email id");
 		switch(sc.nextInt()) {
 		case 1 :
 			UserRegistrationProblem.validFirstName();
@@ -24,6 +24,8 @@ public class Main {
 		UserRegistrationProblem.isValidPassword();
 		case 8:
 			UserRegistrationProblem.oneSpecialCharector();
+		case 9:
+			UserRegistrationProblem.allEmailSample();
 		}	
 	}
 }
