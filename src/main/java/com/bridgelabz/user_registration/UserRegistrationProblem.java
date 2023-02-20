@@ -2,8 +2,10 @@ package com.bridgelabz.user_registration;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.Scanner;
 
 public class UserRegistrationProblem {
+	static Scanner sc = new Scanner(System.in);
 	public static boolean validFirstName(String fname) {
 		String regex = "^[A-Z]{1}[a-z]{2,}$";
 		Pattern p = Pattern.compile(regex);
