@@ -6,7 +6,7 @@ public class Main {
 	public static void welcome(){
         System.out.println("Welcome to User Registration System Problem");
 	}
-	public static void main(String[] args) throws InvalidFirstNameException, InvalidLastNameException, InvalidEmailException, InvalidMobileNumberException, InvalidPsswordRule1Exception, InvalidPasswordRule2Exception, InvalidPasswordRule3Exception, InvalidPasswordRule4Exception, InvalidEmailSampleException  {
+	public static void main(String[] args) {
         welcome(); //calling static method
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--Welcom to user resistration problem--");
